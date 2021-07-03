@@ -1,0 +1,443 @@
+<!-- 		Created By:
+		Sachin Paul -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    
+      <title>Velocity Software</title>
+      
+      <link rel="shortcut icon" href="assets/logo.png">
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3Aregular%2C300%7CMontserrat%3A700%2Cregular&subset=vietnamese%2Clatin-ext%2Clatin&ver=4.8.1' rel='stylesheet'>   
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="css/libs/animate.css">
+      
+      
+    <style>
+      body {
+        font: 400 24px/1.8 Montserrat;
+        text-align: justify;
+        color: #777;
+      }
+      h1{
+        font-weight: 900;
+        text-align: center;
+      }
+
+      h2{
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        font-weight: 900;
+      }
+      h3,h4 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 5px;      
+        font-size: 20px;
+        color: #111;
+      }
+
+      .top{
+        margin-top: 0px;
+      }
+
+     .txt-white{
+       color: #fff;
+     }
+
+      .slider{
+        font-size:medium;
+      }
+    
+      .carousel-inner img {
+        -webkit-filter: grayscale(10%);
+        filter: grayscale(10%); 
+        width: 100%; 
+        margin: auto;
+      }
+      .carousel-caption h1{
+        color: #fff;
+        font-size: 50px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 400px;
+        margin-left: -80px;
+       font-weight: 600;
+      }
+  
+      @media (max-width: 600px) {
+        .carousel-caption {
+          display: none; 
+        }
+      }
+      #nav1.scrolled{
+    background-image: linear-gradient(to right, rgb(26, 24, 24, 0.9) , rgb(71, 71, 70, 0.9));
+    }
+      .navbar {
+        font-family: Montserrat;
+        margin-bottom: 0;
+        font-weight: 800;
+        background-color:transparent;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity: 0.9;
+      }
+      .navbar li a, .navbar .navbar-brand { 
+        color: #fff !important;
+      }
+      .navbar-nav li a:hover {
+        color: #51c5bf !important;
+      }
+      .navbar-nav li.active a {
+        color: #fff !important;
+        background-color: #29292c !important;
+      }
+      .navbar-default .navbar-toggle {
+        border-color: transparent;
+      }
+
+      .caption{
+        margin-top: -550px;
+        color: white;
+        text-align: left;
+        margin-left: 200px;
+        line-height: 60px;
+        font-size: 50px;
+      }
+
+      .caption-para{
+        color:#fff;
+        /* margin-left: 200px; */
+        padding: 20px 20px 20px 200px;
+      }
+
+      .img-google{
+        height: 60px;
+        width: 210px;
+        margin-left: 200px;
+        margin-bottom: 200px;
+      }
+      .img-appstore{
+        height: 60px;
+        width: 210px;
+        margin-left: 20px;
+        margin-bottom: 200px;
+      }
+
+
+      .btm-mar{
+        margin-bottom: 90px;
+        color: #111;
+      }
+
+      .box1,.box2,.box3,.box4{
+        padding: 30px;
+
+      }
+
+      .core-head-align-right{
+        text-align: right;
+        float: right;
+      }
+
+      .core-text-right{
+        text-align: right;
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        float: left;
+      }
+      .core-head-align-left{
+        text-align: left;
+        float: left;
+      }
+
+      .core-text-left{
+        text-align: left;
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        float: left;
+      }
+
+      .icon{
+        padding: 60px 20px 20px 20px;
+      }
+
+      .icon-2{
+        padding: 70px 20px 0px 20px;
+      }
+      .icon-3{
+        padding: 70px 20px 0px 20px;
+      }
+      .icon-4,.icon-5{
+        padding: 70px 20px 0px 20px;
+      }
+
+      .img-center{
+        padding-left: 50px;
+      }
+      footer {
+        padding: 70px;
+      }
+
+
+
+      .bg-footer{
+      background-image: url('assets/bottom_background.jpg');
+      object-fit: scale-down;
+    }
+      .form-control {
+        border-radius: 0;
+      }
+      textarea {
+        resize: none;
+      }
+
+      .feature-pad{
+        padding: 90px;
+      }
+
+      .padding-para{
+        padding: 50px;
+        font-size: 24px;
+      }
+
+      .font-wt{
+        font-weight: 900;
+
+      }
+
+      .foot-pad{
+        padding: 50px;
+      }
+
+      /*---Media Queries --*/
+    
+    @media (max-width: 992px) {
+
+    }
+    
+    @media (max-width: 768px) {
+        .carousel-caption {
+            top: 45%;
+        }
+        .carousel-caption h1 {
+            font-size: 350%
+        }
+        .carousel-caption h3 {
+            font-size: 140%;
+            font-weight: 400%;
+            padding-bottom: 0.2rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .carousel-caption {
+            top: 40%;
+        }
+        .carousel-caption h1 {
+            font-size: 250%
+        }
+        .carousel-caption h3 {
+            font-size: 110%;
+        }
+  
+    }
+    
+    
+    
+      </style>
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    
+    <nav class="navbar navbar-default navbar-fixed-top ">
+      
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> -->
+    
+          <button type="button" class="navbar-toggle" data-abs-toggle="collapse" data-bs-target="#myNavbar" aria-expanded="false" aria-label="myNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="#myPage"><img src="assets/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse " id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myPage">HOME</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#platform">PLATEFORM</a></li>
+            <li><a href="#classes">PRICING</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+       
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="myCarousel">
+     
+    
+        <!-- Wrapper for slides -->
+     <div>
+            <img src="assets/main_banner_1-4.jpg" alt="banner1" width="1500" height="700">
+        
+              <h1 class="caption wow slideInLeft">EASIEST <br> MOBILE APP BUILDER <br> FOR YOUR STORE</h1>
+             <p class="caption-para wow slideInRight">SEAMLESSLY INTEGRATES WITH YOUR STORE</p>
+                <img src="assets/google.png" class="img-google wow slideInLeft">
+                <img src="assets/app-store-1.png" class="img-appstore wow slideInLeft" >
+    </div>
+    
+    <!--- Welcome Section -->
+    <div id="features">
+    <section class="wow fadeInDown" data-wow-duration="3s">
+      <div class="container-fluid feature-pad">
+
+        <h1 class="btm-mar">CORE FEATURES</h1>
+       
+        <div class="row">
+            <div class="col-md-3">
+              <h2 class="core-head-align-right">COMPATIBITY</h2>
+              <p class="core-text-right">Compatible with all platforms including PrestaShop, Magento and OpenCart. </p>
+              
+              <h2 class="core-head-align-right">MULTI LINGUAL</h2>
+              <p class="core-text-right">The incredibly powerful mobile app for your organization is multi-lingual. </p>
+
+              <h2 class="core-head-align-right">MULTIPLE SCREEN SIZE</h2>
+              <p class="core-text-right">Multiple screen size option make the comnpatible with all handheld devices. </p>
+
+              <h2 class="core-head-align-right">MULTIPLE THEMES</h2>
+              <p class="core-text-right">Better users engaged with multiple, interactive and attractive themes. </p>
+
+              <h2 class="core-head-align-right">ORDER TRACKING</h2>
+              <p class="core-text-right">The proactive tracking option ensures better online experience to your customers. </p>
+            </div>
+
+            <div class="col-md-1">
+              <i class="fas fa-user-friends icon"></i>
+              <i class="fas fa-american-sign-language-interpreting icon-2"></i>
+              <i class="	far fa-clone icon-3"></i>
+              <i class="	far fa-file-image icon-4"></i>
+              <i class="fas fa-pen-alt icon-5"></i>
+            </div>
+
+            <div class="col-md-4">
+              <a href="#">
+                <img src = "assets/category-1-1.png" class="img-center">
+              </a>
+            </div>
+
+            <div class="col-md-1">
+              <i class="fas fa-laptop icon"></i>
+              <i class="fas fa-list icon-2"></i>
+              <i class="fas fa-bell icon-3"></i>
+              <i class="fas fa-clipboard-list icon-4"></i>
+              <i class="fas fa-comments icon-5"></i>
+            </div>
+
+            <div class="col-md-3">
+              <h2 class="core-head-align-left">SOCIAL LOGIN</h2>
+              <p class="core-text-left">The quick Facebook, Google+ login option makes shopping a clinch for the customers. </p>
+              
+              <h2 class="core-head-align-left">LAYERED NAVIGATION</h2>
+              <p class="core-text-left">The layered navigation narrows the search and speeds it up saving a lot of time. </p>
+
+              <h2 class="core-head-align-left">UNLIMITED PUSH NOTIFICATION</h2>
+              <p class="core-text-left">The time critical service  aid the purchase decision with promotional triggers. </p>
+
+              <h2 class="core-head-align-left">WISH LIST</h2>
+              <p class="core-text-left">The wishlist option is an effective way to reduce the cart abondonment. </p>
+
+              <h2 class="core-head-align-left">LIVE CHAT</h2>
+              <p class="core-text-left">With the Zopim Chat Service, the customers can have live chat with the support. </p>
+            </div>
+            
+            </div>
+          
+    
+        
+        </div>
+    </div>
+    </section>
+    </div>
+
+    
+    <!-- Footer -->
+    <section class="wow" data-wow-duration="3s">
+    <footer id="platform" class="text-center bg-footer txt-white">
+      <div class="container-fluid padding foot-pad">
+
+        <h1 class="font-wt">SUPPORTED PLATFORMS</h1>
+        <p class="txt-white padding-para">SELECT THE PLATFORM OF YOUR CHOICE</p> 
+       
+        <div class="row">
+            <div class="col-md-3 box1 wow fadeInUp">
+            <a href="#">
+              <img src = "assets/Box1.png">
+             </a>
+            </div>
+
+            <div class="col-md-3 box2 wow fadeInUp">
+              <a href="#">
+                <img src = "assets/Box2.png">
+              </a>
+            </div>
+
+            <div class="col-md-3 box3 wow fadeInUp">
+              <a href="#">
+                <img src = "assets/Box3.png">
+              </a>
+            </div>
+            
+              <div class="col-md-3 box4 wow fadeInUp">
+                <a href="#">
+                  <img src = "assets/Box4.png">
+                </a>
+            </div>
+          
+    
+        
+        </div>
+    </div>
+    
+    </footer>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="dist/wow.js"></script>
+    
+    <script>
+      wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset:       100,
+          callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+          }
+        }
+      );
+      wow.init();
+      document.getElementById('moar').onclick = function() {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+      };
+
+      $(window).scroll(function () {
+       $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+    });
+      
+    </script>
+    
+    </body>
+
+    </html>
+    
